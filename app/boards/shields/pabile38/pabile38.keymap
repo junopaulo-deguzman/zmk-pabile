@@ -21,7 +21,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&kp Q>, <&kp ESC>, <&kp TILDE>;
         };
     };
@@ -41,7 +41,7 @@
 			bindings = <
 				&td0          &kp W    &kp E     &kp R    &kp T                  &kp Y       &kp U       &kp I     &kp O      &kp P
 				&kp A         &kp S    &kp D     &kp F    &kp G      &none       &kp H       &kp J       &kp K     &kp L      &lt 3 MINUS
-				&mt LSHIFT Z  &kp X    &kp C     &kp V    &kp B                  &kp LGUI    &kp N       &kp M     &kp COMMA  &mt LSHIFT DOT  
+				&mt LSHIFT Z  &kp X    &kp C     &kp V    &kp B                  &mt LGUI B  &kp N       &kp M     &kp COMMA  &mt LSHIFT DOT  
 				                       &kp LCTRL &kp LALT &lt 2 BSPC &kp C_MUTE  &lt 1 SPACE &lt 4 ENTER &kp FSLH
 			>;
 		};
@@ -65,7 +65,7 @@
 			bindings = <
 				&trans   &none     &none    &none      &none                 &kp INS  &kp PAGE_UP  &kp UP      &kp PAGE_DOWN      &kp DEL
 				&kp TAB  &none     &none    &none      &none      &none      &kp HOME &kp LEFT     &kp DOWN    &kp RIGHT          &none
-				&none    &none     &none    &none      &none                 &none    &kp END      &none       &none              &none
+				&trans   &none     &none    &none      &none                 &none    &kp END      &none       &none              &none
 				                   &trans   &trans     &trans     &trans     &trans   &trans       &trans
 			>;
 		};
