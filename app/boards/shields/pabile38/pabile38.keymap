@@ -48,25 +48,25 @@
 		1 {
 			bindings = <
 				&kp N1   &kp N2    &kp N3   &kp N4     &kp N5                &kp N6     &kp N7       &kp N8    &kp N9   &kp N0
-				&kp TAB  &none     &none    &kp GRAVE  &kp LBKT   &none      &kp RBKT   &kp BSLH     &kp SEMI  &kp SQT  &lt 3 MINUS
+				&kp TAB  &none     &none    &kp GRAVE  &kp LBKT   &none      &kp RBKT   &kp BSLH     &kp SEMI  &kp SQT  &kp MINUS
 				&trans   &none     &none    &none      &kp EQUAL             &trans     &kp MINUS    &trans    &trans   &trans
-				                   &trans   &trans     &kp BSPC   &trans     &trans     &trans       &trans    
+				                   &trans   &trans     &kp BSPC   &trans     &trans     &kp ENTER    &trans    
 			>;
 		};
 		2 {
 			bindings = <
 				&kp F1   &kp F2    &kp F3   &kp F4     &kp F5                &kp F6      &kp F7       &kp F8   &kp F9       &kp F10
-				&kp TAB  &kp F11   &kp F12  &none      &none      &none      &none       &none        &none    &none        &none
+				&kp TAB  &kp F11   &kp F12  &none      &none      &none      &none       &none        &none    &none        &kp MINUS
 				&trans   &kp PSCRN &none    &none      &kp CAPS              &trans      &kp KP_NLCK  &none    &kp C_VOL_DN &kp C_VOL_UP 
-				                   &trans   &trans     &trans     &trans     &trans      &kp KP_ENTER &trans   &kp C_MUTE
+				                   &trans   &trans     &trans     &trans     &kp SPACE   &kp KP_ENTER &trans   &kp C_MUTE
 			>;
 		};
 		3 {
 			bindings = <
-				&trans   &none     &none    &none      &none                 &kp INS  &kp PAGE_UP  &kp UP      &kp PAGE_DOWN      &kp DEL
-				&kp TAB  &none     &none    &none      &none      &none      &kp HOME &kp LEFT     &kp DOWN    &kp RIGHT          &none
-				&trans   &none     &none    &none      &none                 &trans   &kp END      &none       &none              &none
-				                   &trans   &trans     &kp BSPC   &trans     &trans   &trans       &trans
+				&trans   &none     &none    &none      &none                 &kp INS     &kp PAGE_UP  &kp UP      &kp PAGE_DOWN      &kp DEL
+				&kp TAB  &none     &none    &none      &none      &none      &kp HOME    &kp LEFT     &kp DOWN    &kp RIGHT          &none
+				&trans   &none     &none    &none      &none                 &trans      &kp END      &none       &none              &none
+				                   &trans   &trans     &kp BSPC   &trans     &kp SPACE   &trans       &trans
 			>;
 		};
 		4 {
