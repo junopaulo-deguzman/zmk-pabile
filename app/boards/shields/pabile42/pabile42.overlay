@@ -53,4 +53,29 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(5,0) RC(5,1) RC(5,2) 
 RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(5,3) RC(5,4) RC(5,5) RC(5,6)
             >;
         };
+
+    // b reverse encoder rotation
+    top_encoder: encoder_top {
+        compatible = "alps,ec11";
+        label = "TOP_ENCODER";
+        a-gpios = <&pro_micro_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro_d 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        steps = <80>;
+        status = "okay";
+    };
+
+    bottom_encoder: encoder_bottom {
+        compatible = "alps,ec11";
+        label = "BOTTOM_ENCODER";
+        a-gpios = <&pro_micro_d 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro_d 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        steps = <80>;
+        status = "okay";
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&top_encoder &bottom_encoder>;
+        triggers-per-rotation = <20>;
+    };
 };
