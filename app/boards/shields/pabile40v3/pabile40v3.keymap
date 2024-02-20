@@ -23,9 +23,9 @@
 			// | LCTL | LGUI | LALT | LSHFT| BSPC | SPACE |  ENT  | DEL  | RCTL | ESC   |
 
 			bindings = <
-				&kp Q     &kp W    &kp E    &kp R     &kp T      &kp Y       &kp U       &kp I     &kp O     &kp P
-				&kp A     &kp S    &kp D    &kp F     &kp G      &kp H       &kp J       &kp K     &kp L     &lt 3 MINUS
-				&kp Z     &kp X    &kp C    &kp V     &kp B      &kp N       &kp M       &kp COMMA &kp DOT   &kp FSLH
+				&kp Q     &kp W    &kp F    &kp P     &kp B      &kp J       &kp L       &kp U     &kp Y     &kp SCLN
+				&kp A     &kp R    &kp S    &kp T     &kp G      &kp M       &kp N       &kp E     &kp I     &lt 3 O
+				&kp Z     &kp X    &kp C    &kp D     &kp V      &kp K       &kp H       &kp COMMA &kp DOT   &kp FSLH
 				&kp LCTRL &kp LGUI &kp LALT &kp LSHFT &lt 2 BSPC &lt 1 SPACE &lt 4 ENTER &kp DEL   &kp RCTRL &kp ESC
 			>;
 		};
